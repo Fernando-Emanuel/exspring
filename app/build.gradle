@@ -8,19 +8,20 @@
  */
 
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
+    // configurações pré-prontas utilizadas na aplicação
+    //war: responsavel pelos arquivos jsp
     id 'org.springframework.boot' version '2.6.3'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'war'
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
+    // onde ele encontrará as bibliotecas utilizadas na apliação
     mavenCentral()
 }
 
 dependencies {
-    // This dependency is used by the application.
+    // bibliotecas e recursos que ele utilizará (vem do mavenCentral)
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'javax.servlet:jstl:1.2'
     providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
