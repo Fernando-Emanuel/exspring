@@ -23,7 +23,9 @@ repositories {
 dependencies {
     // bibliotecas e recursos que ele utilizará (vem do mavenCentral)
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'javax.servlet:jstl:1.2'
+    implementation 'mysql:mysql-connector-java'
     providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
 }
 
